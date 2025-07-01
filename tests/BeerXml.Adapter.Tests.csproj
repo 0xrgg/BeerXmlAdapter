@@ -36,7 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\BeerXml.Adapter.csproj" />
+    <ProjectReference Include="..\src\BeerXml.Adapter.csproj" />
   </ItemGroup>
 
   <ItemGroup>
