@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerXml.Adapter", "src\BeerXml.Adapter.csproj", "{5EB11060-D9D8-4855-9F68-2B087543C4FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5481B45F-24E1-4646-BABF-4D3DC426CAB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{67596054-EA3C-4E3C-940A-CF26D0DF9EF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerXml.Adapter.Tests", "tests\BeerXmlAdapter.Tests\BeerXml.Adapter.Tests.csproj", "{71E620BE-FCB0-4199-85FF-50ABA51CB491}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EB11060-D9D8-4855-9F68-2B087543C4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB11060-D9D8-4855-9F68-2B087543C4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB11060-D9D8-4855-9F68-2B087543C4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB11060-D9D8-4855-9F68-2B087543C4FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71E620BE-FCB0-4199-85FF-50ABA51CB491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E620BE-FCB0-4199-85FF-50ABA51CB491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E620BE-FCB0-4199-85FF-50ABA51CB491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E620BE-FCB0-4199-85FF-50ABA51CB491}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5EB11060-D9D8-4855-9F68-2B087543C4FF} = {5481B45F-24E1-4646-BABF-4D3DC426CAB6}
+		{71E620BE-FCB0-4199-85FF-50ABA51CB491} = {67596054-EA3C-4E3C-940A-CF26D0DF9EF6}
+	EndGlobalSection
+EndGlobal
