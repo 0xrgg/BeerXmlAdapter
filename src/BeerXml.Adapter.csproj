@@ -4,6 +4,25 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <PackageId>BeerXmlAdapter</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>0xrgg</Authors>
+    <TargetFramework>net9.0</TargetFramework>
+    <PackageReadmeFile>
+      A simple adapter for parsing BeerXML recipes into objects with the option of parsing to JSON.
+    </PackageReadmeFile>
+    <PackageTags>Xml;XML;BeerXML</PackageTags>
+    <Description>
+      A simple adapter for parsing BeerXML recipes into objects with the option of parsing to JSON.
+    </Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NuGet.CommandLine" Version="6.14.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>

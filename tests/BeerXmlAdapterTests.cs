@@ -24,6 +24,19 @@ namespace BeerXml.Adapter.Tests
         }
 
         [Fact]
+        public void GIVEN_Recipe_With_Extensions_WHEN_Deserialized_THEN_Parse_To_JSON()
+        {
+            var recipe = BeerXmlAdapter.DeserializeXmlRecipe(GetTestXmlRecipeWithExtensions());
+            var json = BeerXmlAdapter.SerializeToJson(recipe);
+
+            recipe.Should().NotBeNull();
+            json.Should().NotBeNull();
+        }
+
+
+        // Testing actual IO operation as I'm too lazy for a mock/factory on such a complex object 
+
+        [Fact]
         public void GIVEN_File_Deserialization_WHEN_Called_THEN_Deserialize_And_Parse_To_JSON()
         {
             var recipe = BeerXmlAdapter.DeserializeXmlRecipeFile("TestRecipe.xml");
@@ -37,17 +50,7 @@ namespace BeerXml.Adapter.Tests
         public async Task GIVEN_Async_File_Deserialization_WHEN_Deserialized_THEN_Parse_To_JSON()
         {
             // Uses a separate file to the other test to prevent locking issues 
-            var recipe = await BeerXmlAdapter.DeserializeXmlRecipeFileAsync("TestRecipeAsyncTest.xml", CancellationToken.None);
-            var json = BeerXmlAdapter.SerializeToJson(recipe);
-
-            recipe.Should().NotBeNull();
-            json.Should().NotBeNull();
-        }
-
-        [Fact]
-        public void GIVEN_Recipe_With_Extensions_WHEN_Deserialized_THEN_Parse_To_JSON()
-        {
-            var recipe = BeerXmlAdapter.DeserializeXmlRecipe(GetTestXmlRecipeWithExtensions());
+            var recipe = await BeerXmlAdapter.DeserializeXmlRecipeFileAsync("TestRecipe.xml", CancellationToken.None);
             var json = BeerXmlAdapter.SerializeToJson(recipe);
 
             recipe.Should().NotBeNull();
